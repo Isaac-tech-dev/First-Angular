@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MaterialModule } from './shared/material/material.module';
 import { ClientComponent } from './pages/client/client.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import { ClientComponent } from './pages/client/client.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
