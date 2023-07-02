@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Clients } from 'src/app/interfaces/client';
 import { ClientService } from 'src/app/services/client.service';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 // export interface PeriodicElement {
 //   name: string;
@@ -30,6 +32,7 @@ import { ClientService } from 'src/app/services/client.service';
 export class ClientComponent implements OnInit{
   displayedColumns: string[] = ['S/N', 'Name', 'Phone No', 'Address'];
   dataSource! : Clients;
+  selected = 'option2';
 
 
   constructor (private clientservice : ClientService){ 
